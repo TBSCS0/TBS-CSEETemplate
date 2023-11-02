@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[linesnumbered]{algorithm2e}
+
+%\usepackage{indentfirst}
+\setlength{\parindent}{0pt}
+
+% Title page
+\title{
+% Enter your research question
+    \begin{Huge}
+        To what extent rubber ducks are relevant for debugging? \\
+    \end{Huge}
+    \vspace{50pt}
+    \begin{Large}
+        Computer Science \\
+    \end{Large}
+    \vspace{50pt}
+}
+
+% Candidate information
+\date{
+    \begin{normalsize}
+        Candidate Number: da42hg \\
+        Word count: 4000 \\
+    \end{normalsize}
+}
+
+% Document Start
+\begin{document}
+
+    \maketitle
+
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \section{Introduction}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    \newpage
+    \section{Theoretical Background}
+    Lorem Ipsum is simply dummy text of the printing and \cite{zebracki2017cybergeography} typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    The volume of an ellipsoid with semi-axes $a$, $b$, and $c$ is given by:
+    \begin{equation}\label{eq:ellipsoid}
+    V = \frac{4}{3} \pi abc
+    \end{equation}
+
+    Equation \eqref{eq:ellipsoid} represents the volume of the ellipsoid.
+
+    \newpage
+    \section{Methodology}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    \begin{algorithm}[!htb]
+        \KwData{An array $A$ of elements with total number $n$}
+        \KwResult{Sorted array $A$ in ascending order}
+        \For{$i \leftarrow 0$ \KwTo $n-1$}{
+            \For{$j \leftarrow 0$ \KwTo $n-i-1$}{
+                \If{$A[j] > A[j+1]$}{
+                    Swap $A[j]$ and $A[j+1]$\;
+                }
+            }
+        }
+        \caption{Bubble Sort}\label{alg:bubble-sort}
+    \end{algorithm}
+
+    \newpage
+    \section{Experiment's Results}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    \begin{figure}[!htb]
+        \begin{center}
+            \includegraphics[width=0.3\textwidth]{duck.jpg}
+        \end{center}
+        \caption{This is an example image.}
+        \label{fig:duck}
+    \end{figure}
+
+    \newpage
+    \section{Analysis \& Evaluation}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum table (\ref{tab:example}).
+
+    \begin{table}[!htb]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+            \hline
+            Row 1, Cell 1 & Row 1, Cell 2 & Row 1, Cell 3 \\
+            Row 2, Cell 1 & Row 2, Cell 2 & Row 2, Cell 3 \\
+            \hline
+        \end{tabular}
+        \caption{Example Table}
+        \label{tab:example}
+    \end{table}
+
+    \newpage
+    \section{Conclusion}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    \newpage
+    \phantomsection
+    \addcontentsline{toc}{section}{Bibliography}
+    \renewcommand{\refname}{Bibliography}
+    \bibliographystyle{IEEEtran}
+    \bibliography{refs}
+
+    \newpage
+    \appendix
+    \section{Appendix}
+    \begin{lstlisting}
+# This is a Python comment
+def hello_world():
+    print("Hello, World!")
+
+# Call the function
+hello_world()
+    \end{lstlisting}
+
+\end{document}
