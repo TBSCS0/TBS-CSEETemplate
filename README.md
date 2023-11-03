@@ -1,7 +1,9 @@
 # TBS-CSEETemplate
 ![LatexIntelliJ](https://github.com/TBSCS0/TBS-CSEETemplate/blob/main/LatexIntelliJ.png)
 
-To have latex running in IntelliJ or PyCharm follow the installation tutorial.
+The fastest and simplest way to start using LaTeX is through an online LaTeX editor. Among them [Overleaf](https://www.overleaf.com/) is a great option. 
+
+If you choose to install LaTeX on your computer, it will take about an hour of your time. To have latex running in IntelliJ or PyCharm follow the installation guide.
 
 ## Installation
 - Step 1: Install [TexLive](https://www.tug.org/texlive/). It will install the latex tools including a tex compiler. 
